@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='../../assets/css/styles.css'>
+    <title>Alta de Categorías - Tienda Informática</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Formulario de Alta de Categorías</h1>
+        <form id="formulario-categorias" action="/alta-categorias" method="POST" enctype="multipart/form-data">
+            <label for="categoria">Categoría:</label>
+            <select id="categoria" name="categoria">
+                <option value="opcion1">Opción 1</option>
+                <option value="opcion2">Opción 2</option>
+                <option value="opcion3">Opción 3</option>
+                <option value="opcion4">Opción 4</option>
+                <option value="opcion5">Opción 5</option>
+                <option value="opcion6">Opción 6</option>
+            </select>
+
+            <label for="descripcion">Descripción:</label>
+            <textarea id="descripcion" name="descripcion" rows="4" cols="50"></textarea>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="../../assets/js/validaciones.js"></script>
+</body>
+</html>
